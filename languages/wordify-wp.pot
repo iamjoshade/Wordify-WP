@@ -1,0 +1,327 @@
+# Blank WordPress Pot
+# Copyright 2014 ...
+# This file is distributed under the GNU General Public License v3 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: "
+"Wordify WP\n"
+"Report-Msgid-Bugs-To: "
+"Translator Name "
+"<translations@example."
+"com>\n"
+"POT-Creation-Date: "
+"2022-05-05 14:04+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your "
+"Name <you@example.com>\n"
+"Language-Team: 95media "
+"themes\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/"
+"plain; charset=UTF-8\n"
+"Content-Transfer-"
+"Encoding: 8bit\n"
+"Plural-Forms: "
+"nplurals=2; plural=n != "
+"1;\n"
+"X-Textdomain-Support: "
+"yesX-Generator: Poedit "
+"1.6.4\n"
+"X-Poedit-SourceCharset: "
+"UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;esc_html_e;"
+"esc_html_x:1,2c;"
+"esc_html__;esc_attr_e;"
+"esc_attr_x:1,2c;"
+"esc_attr__;_ex:1,2c;"
+"_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_x:1,2c;"
+"_n:1,2;_n_noop:1,2;"
+"__ngettext:1,2;"
+"__ngettext_noop:1,2;_c,"
+"_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit "
+"3.0.1\n"
+"X-Poedit-"
+"SearchPath-0: .\n"
+
+#: 404.php:17
+msgid ""
+"Oops! That page "
+"can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:21
+msgid ""
+"It looks like nothing "
+"was found at this "
+"location. Maybe try one "
+"of the links below or a "
+"search?"
+msgstr ""
+
+#: 404.php:30
+msgid ""
+"Most Used Categories"
+msgstr ""
+
+#: 404.php:48
+#, php-format
+msgid ""
+"Try looking in the "
+"monthly archives. %1$s"
+msgstr ""
+
+#: comments.php:35
+#, php-format
+msgid ""
+"One thought on &ldquo;"
+"%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:41
+#, php-format
+msgctxt "comments title"
+msgid ""
+"%1$s thought on &ldquo;"
+"%2$s&rdquo;"
+msgid_plural ""
+"%1$s thoughts on &ldquo;"
+"%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:68
+msgid ""
+"Comments are closed."
+msgstr ""
+
+#: footer.php:43
+msgid "Social"
+msgstr ""
+
+#: functions.php:52
+msgid "Primary"
+msgstr ""
+
+#: functions.php:136
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:138
+#: functions.php:150
+#: functions.php:160
+#: functions.php:172
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:148
+msgid "Footer Sidebar"
+msgstr ""
+
+#: functions.php:158
+msgid "Footer Sidebar 2"
+msgstr ""
+
+#: functions.php:170
+msgid "Footer Sidebar 3"
+msgstr ""
+
+#: header.php:49
+#: searchform.php:6
+msgid ""
+"Type a keyword and hit "
+"enter"
+msgstr ""
+
+#: inc/class-wp-bootstrap-navwalker.php:366
+msgid "Add a menu"
+msgstr ""
+
+#: inc/customizer.php:36
+#: inc/customizer.php:37
+msgid ""
+"Wordify WP Theme Settings"
+msgstr ""
+
+#: inc/customizer.php:78
+#: inc/customizer/social.php:9
+msgid ""
+"Social Media Section"
+msgstr ""
+
+#: inc/customizer.php:79
+#: inc/customizer/social.php:10
+msgid "Social Section"
+msgstr ""
+
+#: inc/customizer.php:95
+#: inc/customizer/social.php:26
+msgid "Facebook"
+msgstr ""
+
+#: inc/customizer.php:96
+#: inc/customizer/social.php:27
+msgid ""
+"Please add your facebook "
+"page link here"
+msgstr ""
+
+#: inc/customizer.php:113
+#: inc/customizer/social.php:44
+msgid "Twitter"
+msgstr ""
+
+#: inc/customizer.php:114
+#: inc/customizer/social.php:45
+msgid ""
+"Please add your twitter "
+"handle here"
+msgstr ""
+
+#: inc/customizer.php:132
+#: inc/customizer/social.php:63
+msgid "Instagram"
+msgstr ""
+
+#: inc/customizer.php:133
+#: inc/customizer/social.php:64
+msgid ""
+"Please add your "
+"Instagram handle here"
+msgstr ""
+
+#: inc/customizer.php:150
+msgid "Youtube"
+msgstr ""
+
+#: inc/customizer.php:151
+msgid ""
+"Please add your Youtube "
+"page here"
+msgstr ""
+
+#: inc/customizer/social.php:81
+msgid "Pinterest"
+msgstr ""
+
+#: inc/customizer/social.php:82
+msgid ""
+"Please add your "
+"Pinterest page here"
+msgstr ""
+
+#: inc/template-functions.php:69
+msgid "Related Post"
+msgstr ""
+
+#: inc/template-functions.php:129
+msgid "Recent Posts"
+msgstr ""
+
+#: inc/template-tags.php:30
+#, php-format
+msgctxt "post date"
+msgid "%s"
+msgstr ""
+
+#: inc/template-tags.php:46
+#, php-format
+msgctxt "post author"
+msgid "%s"
+msgstr ""
+
+#: inc/template-tags.php:63
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:66
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:70
+msgctxt ""
+"list item separator"
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:73
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:83
+#, php-format
+msgid ""
+"Leave a Comment<span "
+"class=\"screen-reader-"
+"text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:100
+#: template-parts/content-page.php:39
+#, php-format
+msgid ""
+"Edit <span class="
+"\"screen-reader-text\">"
+"%s</span>"
+msgstr ""
+
+#: inc/template-tags.php:188
+msgid "Previous page"
+msgstr ""
+
+#: inc/template-tags.php:188
+msgid "<"
+msgstr ""
+
+#: inc/template-tags.php:189
+msgid "Next page"
+msgstr ""
+
+#: inc/template-tags.php:189
+msgid ">"
+msgstr ""
+
+#: index.php:83
+msgid "Latest Posts"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your "
+"first post? <a href="
+"\"%1$s\">Get started "
+"here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing "
+"matched your search "
+"terms. Please try again "
+"with some different "
+"keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t "
+"find what you&rsquo;re "
+"looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:25
+msgid "Pages:"
+msgstr ""
