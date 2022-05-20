@@ -195,7 +195,6 @@ if( !function_exists( 'wordify_wp_pagination_number' ) ) :
 	 endif;
 	
 
-   //7 BURNSIDE GARDENS AB12 4PX
 
 
    

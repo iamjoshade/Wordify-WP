@@ -21,47 +21,41 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                
                     <div class="owl-carousel owl-theme home-slider">
-                    <?php
-                         /* Get all sticky posts */
+    <?php
+            /* Get all sticky posts */
       $sticky = get_option( 'sticky_posts' );
-       
       /* Sort the stickies with the newest ones at the top */
       rsort( $sticky );
-       
       /* Get the 5 newest stickies (change 5 for a different number) */
-      $sticky = array_slice( $sticky, 0, 5 );
+      //$sticky = array_slice( $sticky, 0, 5 );
       if (!empty($sticky)) : 
       /* Query sticky posts */
-      $the_query = new WP_Query( array( 'post__in' => $sticky, 'ignore_sticky_posts' => 1 ) );
+      $the_query = new WP_Query();
       // The Loop
       if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                    
-             
-                        <div>
-                            <?php if(has_post_thumbnail()): ?>
-                            <a href="<?php the_permalink();?>" class="a-block d-flex align-items-center height-lg"
-                                style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'wordify-blog-slider-images');?>'); ">
-                            <?php else:?>
-                                <a href="<?php the_permalink();?>" class="a-block d-flex align-items-center height-lg"
-                                style="background-image: url('<?php echo esc_url(get_template_directory_uri())?>/assets/img/slider-image.jpg'); ">
-                            <?php endif;?>
-                                <div class="text half-to-full">
-                                    <span class="category mb-5"><?php wordify_post_category_name()?></span>
-                                    <div class="post-meta">
-                                        <span class="author mr-2"><?php echo get_avatar( $post->post_author, 30, '', false, [] ); ?> <?php the_author();?></span>&bullet;
-                                        <span class="mr-2"><?php echo esc_html( get_the_date() ); ?> </span> &bullet;
-                                        <span class="ml-2"><span class="fa fa-comments"></span> <?php comments_number('0');?></span>
-
-                                    </div>
-                                    <h3><?php the_title();?></h3>
-                                    <?php the_excerpt();?>
-                                </div>
-                            </a>
+                <div>
+                    <?php if(has_post_thumbnail()): ?>
+                    <a href="<?php the_permalink();?>" class="a-block d-flex align-items-center height-lg"
+                        style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'wordify-blog-slider-images');?>'); ">
+                    <?php else:?>
+                        <a href="<?php the_permalink();?>" class="a-block d-flex align-items-center height-lg"
+                        style="background-image: url('<?php echo esc_url(get_template_directory_uri())?>/assets/img/slider-image.jpg'); ">
+                    <?php endif;?>
+                        <div class="text half-to-full">
+                            <span class="category mb-5"><?php wordify_post_category_name()?></span>
+                            <div class="post-meta">
+                                <span class="author mr-2"><?php echo get_avatar( $post->post_author, 30, '', false, [] ); ?> <?php the_author();?></span>&bullet;
+                                <span class="mr-2"><?php echo esc_html( get_the_date() ); ?> </span> &bullet;
+                                <span class="ml-2"><span class="fa fa-comments"></span> <?php comments_number('0');?></span>
+                            </div>
+                            <h3><?php the_title();?></h3>
+                            <?php the_excerpt();?>
                         </div>
-                        <?php endwhile; endif; wp_reset_postdata(); endif;?>
-                    </div>
+                    </a>
+                </div>
+      <?php endwhile; endif; wp_reset_postdata(); endif;?>
+            </div>
                     
                 </div>
             </div>

@@ -235,8 +235,12 @@ require get_template_directory() . '/inc/customizer.php';
 // Bootstrap Walker Menu
 require get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
 
-// Social Customizer
-//require get_template_directory() . '/inc/customizer/social.php';
+// TGM Plugin Activation
+require_once get_template_directory() . '/inc/class-tgm-plugin-activation.php';
+require_once get_template_directory() . '/inc/required-plugins.php';
+
+// OCDI Includes
+require_once get_template_directory() . '/inc/ocdi.php';
 
 /**
  * Load Jetpack compatibility file.

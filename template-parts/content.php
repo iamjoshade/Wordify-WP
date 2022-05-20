@@ -10,8 +10,7 @@
 ?>
 
 <div <?php post_class('col-md-6'); ?> id="post-<?php the_ID(); ?>">
-	
-<a href="<?php the_permalink();?>" class="blog-entry element-animate" data-animate-effect="fadeIn">
+ <a href="<?php the_permalink();?>" class="blog-entry element-animate" data-animate-effect="fadeIn">
 	<?php if(has_post_thumbnail( )):?>
 	<?php the_post_thumbnail('wordify-blog-thumbnail', ['class' => 'img-fluid w-100'] );?>
 	<?php else:?>
@@ -27,4 +26,4 @@
 	</div>
 	</a>
 	
-	</div><!-- #post-<?php the_ID(); ?> -->
+</div><!-- #post-<?php the_ID(); ?> -->

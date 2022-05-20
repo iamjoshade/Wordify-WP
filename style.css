@@ -3,7 +3,9 @@ Theme Name: Wordify WP
 Theme URI: https://wordify.95media.co.uk
 Author: 95media themes
 Author URI: https://95media.co.uk
-Description: Description
+Description: Wordify WP is a Clean and minimal bloggers theme fully responsive with functionality such as custom sidebar widgets, search functionality, mobile friendly, Classic slider and many more.
+ 
+Footer widgets, Drop-down menu, Classic slider
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.6
@@ -639,6 +641,10 @@ select {
 
 textarea {
 	width: 100%;
+}
+
+.no-results.not-found .search-form {
+    width: -webkit-fill-available;
 }
 
 /*--------------------------------------------------------------

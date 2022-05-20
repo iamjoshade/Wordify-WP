@@ -65,7 +65,7 @@
 				<?php
 			else :
 				?>
-				<p class="site-title site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<p class="site-logo site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
 			$wordify_wp_description = get_bloginfo( 'description', 'display' );

@@ -174,11 +174,15 @@ Class Wordify_WP_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
 		<?php endif;?>
                           <div class="text">
                             <h4><?php the_title();?></h4>
-							<?php if ( $show_date ) : ?>
+							
                             <div class="post-meta">
+							<?php if ( $show_date ) : ?>
                               <span class="mr-2"> <?php echo esc_html(get_the_date()); ?></span>
+							  <?php endif?>
+							  <span class="ml-2"><span class="fa fa-comments"></span> <?php comments_number('0');?></span>
                             </div>
-							<?php endif?>
+							
+							
                           </div>
                         </a>
                       </li>
