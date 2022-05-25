@@ -11,7 +11,7 @@ msgstr ""
 "<translations@example."
 "com>\n"
 "POT-Creation-Date: "
-"2022-05-20 11:59+0100\n"
+"2022-05-25 14:59+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Your "
 "Name <you@example.com>\n"
@@ -131,11 +131,52 @@ msgstr ""
 msgid "Footer Sidebar 3"
 msgstr ""
 
-#: header.php:49
+#: functions.php:226
+msgid "Remove"
+msgstr ""
+
+#: functions.php:227
+#: inc/author.php:41
+msgid "Author Image"
+msgstr ""
+
+#: header.php:50
 #: searchform.php:6
 msgid ""
 "Type a keyword and hit "
 "enter"
+msgstr ""
+
+#: inc/author.php:16
+msgid " Wordify WP Author"
+msgstr ""
+
+#: inc/author.php:17
+msgid "Show Author Profile"
+msgstr ""
+
+#: inc/author.php:31
+msgid "Author Name"
+msgstr ""
+
+#: inc/author.php:36
+msgid "Author Description"
+msgstr ""
+
+#: inc/author.php:46
+msgid "Facebook Link"
+msgstr ""
+
+#: inc/author.php:51
+msgid "Twitter Link"
+msgstr ""
+
+#: inc/author.php:56
+msgid "Youtube Link"
+msgstr ""
+
+#: inc/author.php:61
+msgid "Instagram Link"
 msgstr ""
 
 #: inc/class-tgm-plugin-activation.php:327
@@ -872,6 +913,31 @@ msgstr ""
 
 #: inc/template-tags.php:189
 msgid ">"
+msgstr ""
+
+#: inc/widget-fields.php:57
+msgid "No file chosen"
+msgstr ""
+
+#: inc/widget-fields.php:60
+msgid "Upload"
+msgstr ""
+
+#: inc/widget-fields.php:63
+msgid ""
+"Upgrade your version of "
+"WordPress for full media "
+"support."
+msgstr ""
+
+#: inc/widget-fields.php:69
+msgid ""
+"Does not look right? "
+"Remove "
+msgstr ""
+
+#: inc/widget-fields.php:86
+msgid "View File"
 msgstr ""
 
 #: index.php:77
