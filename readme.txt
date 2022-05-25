@@ -30,8 +30,12 @@ Wordify WP includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 1.0 - May 12 2022 =
 * Initial release
+
+= 1.1 - May 25 2022 =
+* Added Author Widget sidebar
+* Remove Flaticon css
 
 == Credits ==
 

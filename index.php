@@ -99,11 +99,9 @@ get_header();
                             <?php wordify_wp_pagination_number()?>
                         </div>
                     </div>
-
                 </div>
 
                 <!-- END main-content -->
-
                 <?php get_sidebar();?>
                 <!-- END sidebar -->
 

@@ -11,7 +11,7 @@
 
 ?>
 
-</div>
+
 <footer class="site-footer">
     <div class="container">
         <div class="row mb-5">
@@ -65,8 +65,8 @@
                 <p class="small">
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     Copyright &copy; All Rights Reserved | This HTML template is made with <i
-                        class="fa fa-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com"
-                        target="_blank">Colorlib</a>
+                        class="fa fa-heart text-danger" aria-hidden="true"></i> by <a target="_blank" href="https://colorlib.com"
+                        target="_blank">Colorlib</a> Themed By <a target="_blank" href="https://95media.co.uk">95media Themes</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
             </div>

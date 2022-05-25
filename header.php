@@ -22,7 +22,8 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div class="wrap">
+
+<div class="wrap"><!--Start wrap class-->
 	<header role="banner">
         <div class="top-bar">
           <div class="container">

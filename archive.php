@@ -22,15 +22,14 @@ get_header();
 					the_archive_description( '<div class="archive-description">', '</div>' );
 					?>
                 </div>
-
             </div>
 
             <div class="row blog-entries">
-                <div <?php post_class('col-md-12 col-lg-8 main-content'); ?> id="post-<?php the_ID(); ?>">
+                <div class="col-md-12 col-lg-8 main-content">
                     <div class="row">
                         <?php while(have_posts()) : the_post();?>
                         <?php get_template_part('template-parts/content');?>
-                        <?php endwhile; endif;?>
+                        <?php endwhile;?>
                     </div>
 
                     <div class="row mt-5">
@@ -44,6 +43,7 @@ get_header();
                 <!-- END main-content -->
 
                 <?php get_sidebar();?>
+                <?php endif;?>
                 <!-- END sidebar -->
             </div>
         </div>

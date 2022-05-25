@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', '1.1.0' );
 }
 
 /**
@@ -177,6 +177,9 @@ function wordify_wp_widgets_init() {
 		)
 	);
 }
+
+require get_template_directory() . '/inc/widget-fields.php';
+require get_template_directory() . '/inc/author.php';
 add_action( 'widgets_init', 'wordify_wp_widgets_init' );
 
 /**
@@ -189,7 +192,6 @@ function wordify_wp_scripts() {
 	wp_enqueue_style('wordify-wp-owl-carousel-min-style', get_template_directory_uri() . '/assets/css/owl.carousel.min.css');
 	wp_enqueue_style('wordify-wp-ionicons-style', get_template_directory_uri() . '/assets/fonts/ionicons/css/ionicons.min.css');
 	wp_enqueue_style('wordify-wp-fontawesome-style', get_template_directory_uri() . '/assets/fonts/fontawesome/css/font-awesome.min.css');
-	wp_enqueue_style('wordify-wp-flaticon-style', get_template_directory_uri() . '/assets/fonts/flaticon/font/flaticon.css');
 	wp_enqueue_style('wordify-wp-theme-fonts', 'https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700|Inconsolata:400,700&display=swap');
 
 	 wp_enqueue_style( 'wordify-wp-style', get_stylesheet_uri(), array(), _S_VERSION );
@@ -210,7 +212,24 @@ function wordify_wp_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'wordify_wp_scripts' );
+
+function wordify_wp_admin_enqueue(){
+
+    $currentscreen = get_current_screen();
+    if( $currentscreen->id == 'widgets' ){
+        wp_enqueue_media();
+    	wp_enqueue_script( 'wordify-wp-widget', get_template_directory_uri() . '/assets/js/widget.js', array( 'jquery'), '1.0', true );
+    	 $array = array(
+	        'remove'     => esc_html__('Remove','wordify-wp'),
+	        'uploadimage'     => esc_html__('Author Image','wordify-wp'),
+	    );
+	    wp_localize_script( 'wordify-wp-widget', 'wordify_wp_widgets_date', $array );
+     }
+
+}
+add_action('admin_enqueue_scripts','wordify_wp_admin_enqueue');
 
 /**
  * Implement the Custom Header feature.
