@@ -90,7 +90,7 @@ class Wordify_Author_Widget extends WP_Widget {
 
         <!-- replace the code below to match your widget author layout for your theme -->
 
-            <div class="sidebar-box">
+            <div class="sidebar-box mb-4">
               <div class="bio text-center">
               <?php if($wordify_wp_author_name){ ?>
                  <img src="<?php echo esc_url( $wordify_wp_author_image ); ?>" alt="<?php echo esc_html($wordify_wp_author_name); ?>" class="img-fluid">
